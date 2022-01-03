@@ -1,0 +1,15 @@
+
+   div{
+       width: 20%;
+       margin: auto;
+       margin-top: 50px;
+   }
+   
+   #myform{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        margin-bottom: 15px;
+    }

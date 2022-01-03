@@ -1,0 +1,27 @@
+
+    td, th{
+        border: 1px solid black;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #nameBox{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    #header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    #header>p{
+        margin-right: 120px;
+        font-family: sans-serif;
+        color: red;
+        font-weight: bold;
+        margin-top: 40px;
+    }
