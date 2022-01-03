@@ -1,9 +1,14 @@
+    
+    
+    
     console.log("Test")
+
 
     document.querySelector("#myform").addEventListener("submit", submitFun)
 
 
-    function submitFun(){
+    function submitFun(event){
+        event.preventDefault();
 
         let name = document.querySelector("#name").value;
         let adds1 = document.querySelector("#add1").value;
@@ -13,8 +18,9 @@
 
         if(name != "" && adds1 != "" && adds2 != "" && cityname != "" && pinname != ""){
 
-            alert(`${name} Your Order is Accepted`);
-
+            setTimeout(function(){
+                alert(`${name} Your Order is Accepted`);
+            }, 0)
 
             setTimeout(function(){
                 alert("Your order is being cooked");
@@ -39,6 +45,9 @@
 
 
         }
+        else{
+            alert("Please Fill all the details")
+        }
 
       
 
@@ -46,12 +55,7 @@
 
     }
 
-    function weaccept(){
-        setTimeout(function(){
-            alert("Your order is being cooked");
-            console.log("test111")
-        }, 3000)
-    }
+   
 
     
 

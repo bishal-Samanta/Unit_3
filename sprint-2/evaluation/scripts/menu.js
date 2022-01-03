@@ -78,7 +78,7 @@
             let price = document.createElement("p");
 
             //Add value
-            name.textContent = el.strMeal;
+            name.textContent = `Name: ${el.strMeal}`;
             img.src = el.strMealThumb;
 
             //Price 
@@ -90,7 +90,7 @@
             let priceValue = Math.round(getRandomValue(100, 501));
             //console.log(priceValue);
 
-            price.textContent = priceValue;
+            price.textContent = `Price: ${priceValue}`;
 
             btn.textContent = "Add To Cart";
 
@@ -122,13 +122,13 @@
     function addtocart(obj){
         //console.log("Test");
         cartArr.push(obj);
-        document.querySelector("#cartNum").textContent = `Cart ${cartArr.length}`
+        document.querySelector("#cartNum").textContent = `Cart : ${cartArr.length}`
         console.log(cartArr)
         localStorage.setItem("cartArr", JSON.stringify(cartArr));
     }
     console.log(cartArr)
 
-    document.querySelector("#cartNum").textContent = `Cart ${cartArr.length}`
+    document.querySelector("#cartNum").textContent = `Cart : ${cartArr.length}`
 
     document.querySelector("#cartNum").addEventListener("click", function(){
         window.location.href = "cart.html"

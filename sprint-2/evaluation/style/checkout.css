@@ -13,3 +13,21 @@
     input{
         margin-bottom: 15px;
     }
+
+    input{
+        height: 25px;
+    }
+    label{
+        font-family: sans-serif;
+        
+    }
+
+
+    #button{
+        background: black;
+        height: 35px;
+        margin-top: 25px;
+        color: white;
+        font-family: sans-serif;
+        
+    }

@@ -16,7 +16,7 @@
     }
 
     #navBar> div{
-        border: 1px solid red;
+        border: 1px solid transparent;
         width: 10%;
         color: white;
         font-family: sans-serif;
